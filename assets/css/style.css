@@ -1,3 +1,52 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --radius: 50px;
+}
+
+body{
+  height: 200vh;
+  background-color: royalblue;
+  padding: 20px;
+}
+
+.wrapper {
+  position: fixed;
+  top: calc(50vh - 2*var(--radius));
+  left: calc(50% - 2*var(--radius));
+  width: calc(4*var(--radius));
+  background-color: darkorange;
+  min-height: calc(4*var(--radius));
+}
+
+.circule {
+  border-radius: 50%;
+  background-color: black;
+  width: var(--radius);
+  height: var(--radius);
+}
+
+.head {
+  width: calc(2*var(--radius));
+  height: calc(2*var(--radius));
+  position: relative;
+  top: var(--radius);
+  left: calc(50% - var(--radius));
+}
+
+.ear {
+  position: absolute;
+  top: calc((-1 / 2) * var(--radius));
+}
+
+.left-ear {
+  right: calc(100% - (1 / 2) * var(--radius));
+}
+
+.right-ear {
+  left: calc(100% - (1 / 2) * var(--radius));
 }
