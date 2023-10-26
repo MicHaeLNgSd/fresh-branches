@@ -7,7 +7,7 @@
   line-height: 1.6;
 }
 
-header {
+.welcome-container {
   width: 100%;
   height: 100vh;
   padding: 0 20px;
@@ -19,12 +19,12 @@ header {
   background-size: cover;
   background-position: center;
 }
-header > h1 {
+.welcome-container > .welcome-text {
   text-transform: capitalize;
   font-size: 50px;
   line-height: 1.2;
 }
-header > p {
+.welcome-container > .welcome-little-text {
   font-size: 20px;
 }
 .button {
@@ -45,9 +45,12 @@ header > p {
   color: white;
 }
 
-.dark {
+.dark{
   background-color: #926239;
   color: white;
+}
+.dark *{
+  color: inherit;
 }
 .light {
   background-color: #f4f4f4;
@@ -56,17 +59,17 @@ header > p {
   background-color: #f9f9f9;
 }
 
-section {
+.section {
   padding: 20px;
   text-align: center;
   font-size: 17px;
 }
-footer {
+.triple {
   font-size: 0;
 }
-footer > section {
+.little-sec{
+  /* font-size: 17px; */
   display: inline-block;
   text-align: left;
   width: calc(100% / 3);
-  font-size: 17px;
 }
