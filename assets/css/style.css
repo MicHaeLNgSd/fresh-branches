@@ -5,7 +5,7 @@
 }
 
 :root {
-  --radius: 50px;
+  --radius: 100px;
 }
 
 body{
@@ -19,15 +19,15 @@ body{
   top: calc(50vh - 2*var(--radius));
   left: calc(50% - 2*var(--radius));
   width: calc(4*var(--radius));
-  background-color: darkorange;
   min-height: calc(4*var(--radius));
+  background-color: darkorange;
 }
 
-.circule {
+.head,
+.head::before,
+.head::after{
   border-radius: 50%;
   background-color: black;
-  width: var(--radius);
-  height: var(--radius);
 }
 
 .head {
@@ -38,15 +38,19 @@ body{
   left: calc(50% - var(--radius));
 }
 
-.ear {
+.head::before,
+.head::after{
+  content: '';
+  display: block;
+  width: var(--radius);
+  height: var(--radius);
   position: absolute;
   top: calc((-1 / 2) * var(--radius));
 }
 
-.left-ear {
+.head::before{
   right: calc(100% - (1 / 2) * var(--radius));
 }
-
-.right-ear {
+.head::after{
   left: calc(100% - (1 / 2) * var(--radius));
 }
