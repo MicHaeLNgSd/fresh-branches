@@ -2,13 +2,13 @@
   box-sizing: border-box;
 }
 
-:root{
+/* :root{
   --cart-width: 300px;
   --cart-height: 170px;
 }
 
 .card-list {
-}
+} */
 
 .card-item {
   display: inline-block;
@@ -45,9 +45,8 @@
 .card-info{
   font-size: 12px;
   font-weight: bold;
-
-  vertical-align: bottom;
 }
+
 .card-item .card-info::first-letter{
   text-transform: capitalize;
 }
@@ -75,6 +74,21 @@
   background: rgb(124,217,208);
   background: linear-gradient(90deg, rgba(124,217,208,1) 0%, rgba(0,208,183,1) 100%);
 }
+
+/* ADD CHANGEABLE ICONS */
+.card-item:nth-child(3n + 1)>img{
+  content: url('../img/chart-line.svg');
+}
+.card-item:nth-child(3n + 2)>img{
+  content: url('../img/bookmark-outline.svg');
+}
+.card-item:nth-child(3n + 3)>img{
+  content: url('../img/diamond.svg');
+}
+
+/* .card-item:nth-child(3n + 1)>h2::after{
+  content: "h2text";
+} */
 
 .card-item::before,
 .card-item::after{
