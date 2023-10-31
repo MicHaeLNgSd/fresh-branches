@@ -59,14 +59,20 @@ thead th:nth-child(5) {
   background-color: #061539;
 }
 
-table :not(thead) > tr:nth-child(odd) > :nth-child(odd) {
+table :not(thead) tr:nth-child(odd) > :nth-child(odd) {
   background-color: #dbdbdb;
+  /* background-color: red */
 }
-table :not(thead) > tr:nth-child(odd) > :nth-child(even),
-table :not(thead) > tr:nth-child(even) > :nth-child(odd) {
+table :not(thead) tr:nth-child(odd) > :nth-child(even),
+table :not(thead) tr:nth-child(even) > :nth-child(odd) {
   background-color: #e7e7e7;
+  /* background-color: orange */
+}
+table :not(thead) tr:nth-child(even) > :nth-child(even) {
+  background-color: #f3f3f3;
+  /* background-color: yellow */
 }
 
-table :not(thead) > tr:nth-child(even) > :nth-child(even) {
-  background-color: #f3f3f3;
-}
+/* .grandparent .parent1 > .child:nth-child(n):nth-last-child(odd){
+  background-color: aquamarine;
+} */
