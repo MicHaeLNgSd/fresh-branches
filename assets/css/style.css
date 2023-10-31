@@ -43,27 +43,30 @@ table a:hover {
   background-color: #9a9999;
 }
 
-.lighter-blue {
+thead th:nth-child(1) {
   background-color: #7887ab;
 }
-.light-blue {
+thead th:nth-child(2) {
   background-color: #4f628e;
 }
-.normal-blue {
+thead th:nth-child(3) {
   background-color: #2e4172;
 }
-.dark-blue {
+thead th:nth-child(4) {
   background-color: #162955;
 }
-.darker-blue {
+thead th:nth-child(5) {
   background-color: #061539;
 }
-.dark-grey {
+
+table :not(thead) > tr:nth-child(odd) > :nth-child(odd) {
   background-color: #dbdbdb;
 }
-.normal-grey {
+table :not(thead) > tr:nth-child(odd) > :nth-child(even),
+table :not(thead) > tr:nth-child(even) > :nth-child(odd) {
   background-color: #e7e7e7;
 }
-.light-grey {
+
+table :not(thead) > tr:nth-child(even) > :nth-child(even) {
   background-color: #f3f3f3;
 }
