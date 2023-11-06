@@ -1,3 +1,42 @@
+@import "./fonts.css";
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Kenia&display=swap');
+
 * {
   box-sizing: border-box;
 }
+
+:root{
+  font-size: 25px;
+}
+
+.main-heading{
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+
+  font-family: Kenia, Caveat, scary, sans-serif;
+}
+
+body{
+  color:cyan;
+}
+
+.wrapper{
+  border: 5px solid black;
+  padding: 10px;
+}
+.inner{
+  border: 5px dashed black;
+  padding: 10px;
+
+  font-size: 10px;
+}
+.article-text{
+  /*20px*/
+  font-size: 2em;
+  /*50px*/
+  font-size: 2rem; 
+}
+
+@import './../css/print.css' print;

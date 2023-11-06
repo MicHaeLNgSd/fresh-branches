@@ -1,0 +1,11 @@
+body{
+  color:black
+}
+
+.main-heading{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.article-text{
+  font-style: italic;
+}
