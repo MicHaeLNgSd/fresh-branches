@@ -1,0 +1,23 @@
+.header{
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  background-color: gray;
+  color: white;
+}
+
+.main-heading{
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+
+  font-family: Kenia, Caveat, scary, sans-serif;
+}
+
+@media print {
+  .main-heading{
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+  }
+}
