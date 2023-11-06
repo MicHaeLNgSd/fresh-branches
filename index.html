@@ -4,9 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    
+    <main>
+      <article class="registration-area">
+        <h2 class="registration-header">Register</h2>
+        <p>Create your account. It's free and only takes a minute</p>
+        <form method="" class="form">
+          <div class="form-names">
+            <input type="text" class="form-input input-name" name="name" placeholder="first name" required>
+            <input type="text" class="form-input input-surname" name="surname" placeholder="last name" required>
+          </div>
+          <input type="email" class="form-input input-email" name="email" placeholder="email" required>
+          <input type="password" class="form-input input-password" name="password" placeholder="password" required>
+          <input type="password" class="form-input input-confirm-password" name="confinmPassword" placeholder="confinm password" required>
+          <label>
+            <input type="checkbox" name="acceptCheckbox" required>
+            I accept the <a href="#" class="form-link">Terms of Use</a> & <a href="#" class="form-link">Privacy Policy</a>
+          </label>
+          <button type="submit" class="form-button">Register Now</button>
+        </form>
+      </article>
+    </main>
   </body>
 </html>
