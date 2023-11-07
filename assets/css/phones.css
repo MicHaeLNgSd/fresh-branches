@@ -1,0 +1,22 @@
+/* .phones{
+  margin-block: 60px 80px;
+} */
+
+.phones{
+  margin-block: 20px 80px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .dblPhones{
+  margin: 0 auto;
+} */
+
+/* .phones{
+  position: relative;
+}
+
+.dblPhone{
+  position: absolute;
+} */
