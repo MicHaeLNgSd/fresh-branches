@@ -3,15 +3,16 @@
 } */
 
 .phones{
-  margin-block: 20px 80px;
-  
+  max-width: 100%;
+  margin-bottom: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* .dblPhones{
-  margin: 0 auto;
-} */
+.dblPhones{
+  width: 422px;
+  /* margin: 0 auto; */
+}
 
 /* .phones{
   position: relative;
@@ -20,3 +21,15 @@
 .dblPhone{
   position: absolute;
 } */
+
+@media screen and (min-width: 992px) {
+  .dblPhones{
+    width: 548px;
+    margin-top: -170px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .dblPhones{
+    width: 90%;
+  } 
+}

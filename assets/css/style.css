@@ -9,9 +9,5 @@
 
 main{
   overflow: hidden;
-}
-
-.main-header-sec-btn.red {
-  background-color: #fa4a0c;
-  color: white;
+  background-color:#FAFAFA;
 }

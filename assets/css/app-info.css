@@ -1,10 +1,11 @@
 .app-info {
+  display: flex;
+  flex-direction: column;
   padding-block: 40px;
 }
 
 .app-info-header {
   color: #000;
-
   text-align: center;
   font-size: 24px;
   font-weight: 600;
@@ -14,15 +15,14 @@
 .horizontal-line {
   border: 2px solid #e4e4e4;
   margin-block: 40px 60px;
+  width: 100%;
 }
-
 
 .main-sec {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .main-sec-text-container {
@@ -30,29 +30,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 30px;
   width: 90%;
 }
 
-.sec-link {
-  color: #FA4A0C;
+.main-sec-link {
+  color: #fa4a0c;
   font-size: 24px;
   font-weight: 700;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.sec-header {
-  color: var(--text, #252B42);
-  text-align: center;
+.main-sec-header {
+  color: var(--text, #252b42);
   font-size: 40px;
   font-weight: 700;
   line-height: 57px;
   padding: 10px;
 }
 
-.sec-explaining {
+.main-sec-explaining {
   color: var(--second-text, #737373);
-  text-align: center;
   font-size: 24px;
   font-weight: 500;
   line-height: 38px;
@@ -61,8 +61,51 @@
   padding: 10px;
 }
 
-.main-sec-img{
+.main-sec-img {
   padding: 40px;
   margin-bottom: 50px;
   /* margin-block: ; */
+}
+
+@media screen and (min-width: 992px) {
+  .app-info {
+    margin-bottom: 200px;
+  }
+  .horizontal-line {
+    order: -1;
+    width: 65%;
+    margin-block: 20px 60px;
+  }
+  .app-info-header {
+    font-family: Poppins;
+    font-size: 44px;
+    opacity: 0.8;
+  }
+  .main-sec{
+    margin-top: 80px;
+    flex-direction: row;
+    justify-content: left;
+    padding-inline: 20px;
+    padding-left: 15%;
+    gap: 200px;
+  }
+  .main-sec:nth-child(odd){
+    flex-direction: row-reverse;
+  }
+  .main-sec-text-container{
+    text-align: left;
+    align-items: flex-start;
+    width: 568px;
+    gap: 7px;
+  }
+  .main-sec-header{
+    padding: 10px 0;
+  }
+  .main-sec-explaining {
+    width: 90%;
+    padding: 10px 0;
+  }
+  .main-sec-img {
+    margin: 0;
+  }
 }

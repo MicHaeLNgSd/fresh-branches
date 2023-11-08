@@ -1,11 +1,17 @@
 .main-header {
-  /* display: flex;
+  text-align: center;
+  padding-top: 50px;
+  padding-inline: 5px;
+}
+
+.main-header-text-container {
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; */
-  text-align: center;
-
-  padding-top: 50px;
+  align-items: center;
+  max-width: 750px;
+  margin: 0 auto;
+  gap: 7px;
 }
 
 .main-header-pretext {
@@ -19,7 +25,6 @@
   font-size: 36px;
   font-weight: 700;
   padding: 10px;
-  margin: 7px 0;
 }
 
 .main-header-text {
@@ -27,12 +32,21 @@
   font-size: 24px;
   font-weight: 500;
 
-  width: 80%;
+  width: 85%;
   padding: 10px;
-  margin: 7px auto 50px auto;
+  /* margin: 7px auto 50px auto; */
 }
 
-.main-header-sec-btn {
+.main-header-buttons {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header-btn {
+  /* cursor: pointer; */
   background-color: transparent;
   border: 1px solid #fa4a0c;
   border-radius: 30px;
@@ -42,12 +56,69 @@
   font-weight: 700;
 
   width: 60%;
+  margin-bottom: 20px;
+  
+  text-decoration: none;
 }
 
-.main-header-sec-btn + .main-header-sec-btn{
-  margin-top: 20px;
-}
-/* .main-header-sec-btn.red {
+.main-header-btn.red {
   background-color: #fa4a0c;
   color: white;
-} */
+}
+
+@media screen and (min-width: 992px) {
+  .main-header-pretext,
+  .main-header-text{
+    color: #f6f6f6;
+  }
+
+  .main-header {
+    background-image: url(../img/backgroundStart.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    padding-block: 80px 160px;
+  }
+  .main-header-text-container {
+    max-width: 1005px;
+    gap: 7px;
+  }
+  .main-header-pretext {
+    font-size: 24px;
+  }
+  .main-header-slogan {
+    font-family: Poppins, Montserrat;
+    color: white;
+    padding: 10px 34px;
+    font-size: 58px;
+    text-align: end;
+    
+    line-height: 80px;
+  }
+  .main-header-slogan::before {
+    content: '';
+    float: right;
+    width: calc(2.5em);
+    height: 1em;
+  }
+
+
+  .main-header-text {
+    padding: 10px 88px 48px 89px;
+    margin: 0;
+    line-height: 38px;
+  }
+  .main-header-buttons{
+    margin: 0;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .main-header-btn {
+    width: 236px;
+    margin: 0;
+  }
+  .main-header-btn:not(.red) {
+    border: 1px solid white;
+    color: white;
+  }
+}
