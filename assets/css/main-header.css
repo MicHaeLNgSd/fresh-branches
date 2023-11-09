@@ -89,18 +89,18 @@
   .main-header-slogan {
     font-family: Poppins, Montserrat;
     color: white;
-    padding: 10px 34px;
+    padding: 10px 24px;
     font-size: 58px;
-    text-align: end;
+    text-align: center;
     
     line-height: 80px;
   }
-  .main-header-slogan::before {
+  /* .main-header-slogan::before {
     content: '';
     float: right;
     width: calc(2.5em);
     height: 1em;
-  }
+  } */
 
 
   .main-header-text {
